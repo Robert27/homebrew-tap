@@ -15,15 +15,13 @@ brew install eggl-cli
 |---------|-------------|
 | [eggl-cli](Formula/eggl-cli.rb) | General-purpose helper CLI |
 
-## Updating after a new release
+## Updates
 
-When a new version of eggl-cli is tagged:
+Formula updates for `eggl-cli` are published automatically by [GoReleaser](https://goreleaser.com/) when a new `v*` tag is pushed to [eggl-cli](https://github.com/Robert27/eggl-cli).
 
-1. Update `url` and `sha256` in `Formula/eggl-cli.rb`
-2. Compute the new checksum:
+Users can upgrade with:
 
-   ```bash
-   curl -L https://github.com/Robert27/eggl-cli/archive/refs/tags/vX.Y.Z.tar.gz | shasum -a 256
-   ```
-
-3. Commit and push
+```bash
+brew update
+brew upgrade eggl-cli
+```
