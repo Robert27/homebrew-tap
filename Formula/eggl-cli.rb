@@ -5,13 +5,13 @@
 class EgglCli < Formula
   desc "General-purpose helper CLI"
   homepage "https://github.com/Robert27/eggl-cli"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Robert27/eggl-cli/releases/download/v0.3.1/eggl-cli_0.3.1_darwin_amd64.tar.gz"
-      sha256 "cbba1f8eb56725cbcff8cfbc260978b9082c317d4ca2b49208dba0c8771edb62"
+      url "https://github.com/Robert27/eggl-cli/releases/download/v0.3.2/eggl-cli_0.3.2_darwin_amd64.tar.gz"
+      sha256 "bcbfe201899d51702b7435e3a1a67aa434488b53fa55992d33a1d7222f5efac9"
 
       define_method(:install) do
         bin.install "eggl"
@@ -19,8 +19,8 @@ class EgglCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Robert27/eggl-cli/releases/download/v0.3.1/eggl-cli_0.3.1_darwin_arm64.tar.gz"
-      sha256 "b0af72f6a6d77fb5892bd69dd2a9d45d4166b76c0c27d04d3196d91adbca50fd"
+      url "https://github.com/Robert27/eggl-cli/releases/download/v0.3.2/eggl-cli_0.3.2_darwin_arm64.tar.gz"
+      sha256 "fe09c6c4dd0533f1bb081c91723b1ab34ff6d18196ab1262ccd6fdf906e0c8da"
 
       define_method(:install) do
         bin.install "eggl"
@@ -31,16 +31,16 @@ class EgglCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Robert27/eggl-cli/releases/download/v0.3.1/eggl-cli_0.3.1_linux_amd64.tar.gz"
-      sha256 "1f3f4c9438310b9cc33df667fd5162da8e26a7ba36ba0341d1db965cde3ecea0"
+      url "https://github.com/Robert27/eggl-cli/releases/download/v0.3.2/eggl-cli_0.3.2_linux_amd64.tar.gz"
+      sha256 "610d99498e279cd3d1bd48d69d8ca7467a0888c170fa22d3956f502298a6144d"
       define_method(:install) do
         bin.install "eggl"
         generate_completions_from_executable(bin/"eggl", shells: [:bash, :zsh, :fish], shell_parameter_format: :cobra)
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Robert27/eggl-cli/releases/download/v0.3.1/eggl-cli_0.3.1_linux_arm64.tar.gz"
-      sha256 "eff4fed9be542c3973ee3413ec2995c7a4c92aae85fbb60c3cb6aa3b15ac1a4f"
+      url "https://github.com/Robert27/eggl-cli/releases/download/v0.3.2/eggl-cli_0.3.2_linux_arm64.tar.gz"
+      sha256 "f992798a14a57655b2999319adae0bd81f7c6870a66a8b362a68c232a0ff6838"
       define_method(:install) do
         bin.install "eggl"
         generate_completions_from_executable(bin/"eggl", shells: [:bash, :zsh, :fish], shell_parameter_format: :cobra)
