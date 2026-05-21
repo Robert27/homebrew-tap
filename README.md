@@ -6,22 +6,22 @@ Homebrew formulae and casks for [Robert27](https://github.com/Robert27) projects
 
 ```bash
 brew tap Robert27/tap
-brew install --cask eggl-cli
+brew install eggl-cli
 ```
 
 ## Packages
 
 | Name | Description |
 |------|-------------|
-| [eggl-cli](Casks/eggl-cli.rb) | General-purpose helper CLI |
+| [eggl-cli](Formula/eggl-cli.rb) | General-purpose helper CLI |
 
 ## Updates
 
-The `eggl-cli` cask is published automatically by [GoReleaser](https://goreleaser.com/) when a new `v*` tag is pushed to [eggl-cli](https://github.com/Robert27/eggl-cli).
+The `eggl-cli` formula is published automatically by [GoReleaser](https://goreleaser.com/) when a new `v*` tag is pushed to [eggl-cli](https://github.com/Robert27/eggl-cli).
 
 Users can upgrade with:
 
 ```bash
 brew update
-brew upgrade --cask eggl-cli
+brew upgrade eggl-cli
 ```
