@@ -13,7 +13,7 @@ class EgglCli < Formula
               "-X github.com/Robert27/eggl-cli/cmd.version=v#{version} " \
               "-X github.com/Robert27/eggl-cli/cmd.commit=brew " \
               "-X github.com/Robert27/eggl-cli/cmd.date=#{time.iso8601}"
-    system "go", "build", *std_go_args(ldflags:), "."
+    system "go", "build", *std_go_args(output: bin/"eggl", ldflags:), "."
   end
 
   test do
