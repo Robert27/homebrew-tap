@@ -1,11 +1,11 @@
 # homebrew-tap
 
-Homebrew formulae and casks for [Robert27](https://github.com/Robert27) projects.
+Homebrew formulae and casks for [roberteggl](https://github.com/roberteggl) projects.
 
 ## Usage
 
 ```bash
-brew tap Robert27/tap
+brew tap roberteggl/tap
 brew install eggl-cli
 ```
 
@@ -17,7 +17,7 @@ brew install eggl-cli
 
 ## Updates
 
-The `eggl-cli` formula is published automatically by [GoReleaser](https://goreleaser.com/) when a new `v*` tag is pushed to [eggl-cli](https://github.com/Robert27/eggl-cli).
+The `eggl-cli` formula is published automatically by [GoReleaser](https://goreleaser.com/) when a new `v*` tag is pushed to [eggl-cli](https://github.com/roberteggl/eggl-cli).
 
 Users can upgrade with:
 
